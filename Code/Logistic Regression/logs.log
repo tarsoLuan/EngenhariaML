@@ -11095,3 +11095,749 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2024-04-14 17:19:00,124:INFO:save_model() successfully completed......................................
 2024-04-14 17:19:00,324:INFO:Initializing load_model()
 2024-04-14 17:19:00,324:INFO:load_model(model_name=./modelo_kobe_lr, platform=None, authentication=None, verbose=True)
+2024-04-20 13:31:52,790:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-04-20 13:31:52,790:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-04-20 13:31:52,790:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-04-20 13:31:52,790:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-04-20 13:37:46,828:INFO:PyCaret ClassificationExperiment
+2024-04-20 13:37:46,828:INFO:Logging name: Logistic Regression
+2024-04-20 13:37:46,828:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-04-20 13:37:46,828:INFO:version 3.3.0
+2024-04-20 13:37:46,828:INFO:Initializing setup()
+2024-04-20 13:37:46,828:INFO:self.USI: c3f7
+2024-04-20 13:37:46,828:INFO:self._variable_keys: {'seed', 'exp_name_log', 'n_jobs_param', 'y_train', 'idx', 'target_param', 'memory', 'gpu_param', 'X_test', 'exp_id', 'y', 'USI', 'data', 'y_test', 'X', 'fix_imbalance', '_available_plots', 'logging_param', 'X_train', 'gpu_n_jobs_param', 'fold_groups_param', 'html_param', 'is_multiclass', 'log_plots_param', 'pipeline', '_ml_usecase', 'fold_generator', 'fold_shuffle_param'}
+2024-04-20 13:37:46,828:INFO:Checking environment
+2024-04-20 13:37:46,828:INFO:python_version: 3.11.8
+2024-04-20 13:37:46,828:INFO:python_build: ('main', 'Feb 26 2024 21:34:05')
+2024-04-20 13:37:46,828:INFO:machine: AMD64
+2024-04-20 13:37:46,828:INFO:platform: Windows-10-10.0.22635-SP0
+2024-04-20 13:37:46,831:INFO:Memory: svmem(total=34301194240, available=23914692608, percent=30.3, used=10386501632, free=23914692608)
+2024-04-20 13:37:46,831:INFO:Physical Core: 6
+2024-04-20 13:37:46,831:INFO:Logical Core: 12
+2024-04-20 13:37:46,831:INFO:Checking libraries
+2024-04-20 13:37:46,831:INFO:System:
+2024-04-20 13:37:46,831:INFO:    python: 3.11.8 | packaged by Anaconda, Inc. | (main, Feb 26 2024, 21:34:05) [MSC v.1916 64 bit (AMD64)]
+2024-04-20 13:37:46,831:INFO:executable: c:\ProgramData\anaconda3\envs\EngenhariML\python.exe
+2024-04-20 13:37:46,831:INFO:   machine: Windows-10-10.0.22635-SP0
+2024-04-20 13:37:46,832:INFO:PyCaret required dependencies:
+2024-04-20 13:37:46,923:INFO:                 pip: 23.3.1
+2024-04-20 13:37:46,923:INFO:          setuptools: 68.2.2
+2024-04-20 13:37:46,923:INFO:             pycaret: 3.3.0
+2024-04-20 13:37:46,923:INFO:             IPython: 8.18.1
+2024-04-20 13:37:46,923:INFO:          ipywidgets: 8.1.2
+2024-04-20 13:37:46,923:INFO:                tqdm: 4.66.2
+2024-04-20 13:37:46,923:INFO:               numpy: 1.26.4
+2024-04-20 13:37:46,923:INFO:              pandas: 2.1.4
+2024-04-20 13:37:46,923:INFO:              jinja2: 3.1.2
+2024-04-20 13:37:46,923:INFO:               scipy: 1.11.4
+2024-04-20 13:37:46,923:INFO:              joblib: 1.3.0
+2024-04-20 13:37:46,923:INFO:             sklearn: 1.4.2
+2024-04-20 13:37:46,923:INFO:                pyod: 1.1.3
+2024-04-20 13:37:46,923:INFO:            imblearn: 0.12.2
+2024-04-20 13:37:46,923:INFO:   category_encoders: 2.6.3
+2024-04-20 13:37:46,923:INFO:            lightgbm: 4.3.0
+2024-04-20 13:37:46,923:INFO:               numba: 0.59.1
+2024-04-20 13:37:46,924:INFO:            requests: 2.31.0
+2024-04-20 13:37:46,924:INFO:          matplotlib: 3.7.5
+2024-04-20 13:37:46,924:INFO:          scikitplot: 0.3.7
+2024-04-20 13:37:46,924:INFO:         yellowbrick: 1.5
+2024-04-20 13:37:46,924:INFO:              plotly: 5.20.0
+2024-04-20 13:37:46,924:INFO:    plotly-resampler: Not installed
+2024-04-20 13:37:46,924:INFO:             kaleido: 0.2.1
+2024-04-20 13:37:46,924:INFO:           schemdraw: 0.15
+2024-04-20 13:37:46,924:INFO:         statsmodels: 0.14.1
+2024-04-20 13:37:46,924:INFO:              sktime: 0.28.0
+2024-04-20 13:37:46,924:INFO:               tbats: 1.1.3
+2024-04-20 13:37:46,924:INFO:            pmdarima: 2.0.4
+2024-04-20 13:37:46,924:INFO:              psutil: 5.9.6
+2024-04-20 13:37:46,924:INFO:          markupsafe: 2.1.3
+2024-04-20 13:37:46,924:INFO:             pickle5: Not installed
+2024-04-20 13:37:46,924:INFO:         cloudpickle: 3.0.0
+2024-04-20 13:37:46,924:INFO:         deprecation: 2.1.0
+2024-04-20 13:37:46,924:INFO:              xxhash: 3.4.1
+2024-04-20 13:37:46,924:INFO:           wurlitzer: Not installed
+2024-04-20 13:37:46,924:INFO:PyCaret optional dependencies:
+2024-04-20 13:37:46,937:INFO:                shap: Not installed
+2024-04-20 13:37:46,937:INFO:           interpret: Not installed
+2024-04-20 13:37:46,937:INFO:                umap: Not installed
+2024-04-20 13:37:46,937:INFO:     ydata_profiling: Not installed
+2024-04-20 13:37:46,937:INFO:  explainerdashboard: Not installed
+2024-04-20 13:37:46,937:INFO:             autoviz: Not installed
+2024-04-20 13:37:46,937:INFO:           fairlearn: Not installed
+2024-04-20 13:37:46,937:INFO:          deepchecks: Not installed
+2024-04-20 13:37:46,937:INFO:             xgboost: Not installed
+2024-04-20 13:37:46,937:INFO:            catboost: Not installed
+2024-04-20 13:37:46,937:INFO:              kmodes: Not installed
+2024-04-20 13:37:46,937:INFO:             mlxtend: Not installed
+2024-04-20 13:37:46,937:INFO:       statsforecast: Not installed
+2024-04-20 13:37:46,937:INFO:        tune_sklearn: Not installed
+2024-04-20 13:37:46,937:INFO:                 ray: Not installed
+2024-04-20 13:37:46,937:INFO:            hyperopt: Not installed
+2024-04-20 13:37:46,937:INFO:              optuna: Not installed
+2024-04-20 13:37:46,938:INFO:               skopt: Not installed
+2024-04-20 13:37:46,938:INFO:              mlflow: 2.11.3
+2024-04-20 13:37:46,938:INFO:              gradio: Not installed
+2024-04-20 13:37:46,938:INFO:             fastapi: Not installed
+2024-04-20 13:37:46,938:INFO:             uvicorn: Not installed
+2024-04-20 13:37:46,938:INFO:              m2cgen: Not installed
+2024-04-20 13:37:46,938:INFO:           evidently: Not installed
+2024-04-20 13:37:46,938:INFO:               fugue: Not installed
+2024-04-20 13:37:46,938:INFO:           streamlit: Not installed
+2024-04-20 13:37:46,938:INFO:             prophet: Not installed
+2024-04-20 13:37:46,938:INFO:None
+2024-04-20 13:37:46,938:INFO:Set up data.
+2024-04-20 13:37:46,944:INFO:Set up folding strategy.
+2024-04-20 13:37:46,944:INFO:Set up train/test split.
+2024-04-20 13:37:46,949:INFO:Set up index.
+2024-04-20 13:37:46,950:INFO:Assigning column types.
+2024-04-20 13:37:46,953:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-04-20 13:37:46,988:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-04-20 13:37:46,991:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-04-20 13:37:47,019:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,019:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,053:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-04-20 13:37:47,054:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-04-20 13:37:47,075:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,075:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,075:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-04-20 13:37:47,110:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-04-20 13:37:47,131:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,131:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,166:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-04-20 13:37:47,187:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,187:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,187:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-04-20 13:37:47,243:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,243:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,298:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,298:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,306:INFO:Preparing preprocessing pipeline...
+2024-04-20 13:37:47,307:INFO:Set up simple imputation.
+2024-04-20 13:37:47,328:INFO:Finished creating preprocessing pipeline.
+2024-04-20 13:37:47,332:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\luant\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['lat', 'lon', 'minutes_remaining',
+                                             'period', 'playoffs',
+                                             'shot_distance'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False)
+2024-04-20 13:37:47,332:INFO:Creating final display dataframe.
+2024-04-20 13:37:47,381:INFO:Setup _display_container:                     Description                Value
+0                    Session id                 3930
+1                        Target       shot_made_flag
+2                   Target type               Binary
+3           Original data shape            (5140, 7)
+4        Transformed data shape            (5140, 7)
+5   Transformed train set shape            (3597, 7)
+6    Transformed test set shape            (1543, 7)
+7              Numeric features                    6
+8                    Preprocess                 True
+9               Imputation type               simple
+10           Numeric imputation                 mean
+11       Categorical imputation                 mode
+12               Fold Generator      StratifiedKFold
+13                  Fold Number                   10
+14                     CPU Jobs                   -1
+15                      Use GPU                False
+16               Log Experiment         MlflowLogger
+17              Experiment Name  Logistic Regression
+18                          USI                 c3f7
+2024-04-20 13:37:47,445:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,445:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,503:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,503:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-04-20 13:37:47,510:WARNING:C:\Users\luant\AppData\Roaming\Python\Python311\site-packages\pycaret\internal\metrics.py:51: FutureWarning: The `needs_threshold` and `needs_proba` parameter are deprecated in version 1.4 and will be removed in 1.6. You can either let `response_method` be `None` or set it to `predict` to preserve the same behaviour.
+  warnings.warn(
+
+2024-04-20 13:37:47,513:INFO:Logging experiment in loggers
+2024-04-20 13:37:47,704:INFO:SubProcess save_model() called ==================================
+2024-04-20 13:37:47,709:INFO:Initializing save_model()
+2024-04-20 13:37:47,709:INFO:save_model(model=Pipeline(memory=FastMemory(location=C:\Users\luant\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['lat', 'lon', 'minutes_remaining',
+                                             'period', 'playoffs',
+                                             'shot_distance'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False), model_name=C:\Users\luant\AppData\Local\Temp\tmpn0mylqn7\Transformation Pipeline, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\luant\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['lat', 'lon', 'minutes_remaining',
+                                             'period', 'playoffs',
+                                             'shot_distance'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False), verbose=False, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2024-04-20 13:37:47,709:INFO:Adding model into prep_pipe
+2024-04-20 13:37:47,709:WARNING:Only Model saved as it was a pipeline.
+2024-04-20 13:37:47,711:INFO:C:\Users\luant\AppData\Local\Temp\tmpn0mylqn7\Transformation Pipeline.pkl saved in current working directory
+2024-04-20 13:37:47,713:INFO:Pipeline(memory=FastMemory(location=C:\Users\luant\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['lat', 'lon', 'minutes_remaining',
+                                             'period', 'playoffs',
+                                             'shot_distance'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False)
+2024-04-20 13:37:47,713:INFO:save_model() successfully completed......................................
+2024-04-20 13:37:47,812:INFO:SubProcess save_model() end ==================================
+2024-04-20 13:37:47,827:INFO:setup() successfully completed in 0.69s...............
+2024-04-20 13:37:47,827:INFO:Initializing create_model()
+2024-04-20 13:37:47,828:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018C3E14BF10>, estimator=lr, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=0.5, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-04-20 13:37:47,828:INFO:Checking exceptions
+2024-04-20 13:37:47,840:INFO:Importing libraries
+2024-04-20 13:37:47,840:INFO:Copying training dataset
+2024-04-20 13:37:47,845:INFO:Defining folds
+2024-04-20 13:37:47,845:INFO:Declaring metric variables
+2024-04-20 13:37:47,849:INFO:Importing untrained model
+2024-04-20 13:37:47,854:INFO:Logistic Regression Imported successfully
+2024-04-20 13:37:47,859:INFO:Starting cross validation
+2024-04-20 13:37:47,860:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-04-20 13:37:55,667:INFO:Calculating mean and std
+2024-04-20 13:37:55,669:INFO:Creating metrics dataframe
+2024-04-20 13:37:55,676:INFO:Finalizing model
+2024-04-20 13:37:55,728:INFO:Creating Dashboard logs
+2024-04-20 13:37:55,735:INFO:Model: Logistic Regression
+2024-04-20 13:37:55,761:INFO:Logged params: {'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': None, 'max_iter': 1000, 'multi_class': 'auto', 'n_jobs': None, 'penalty': 'l2', 'random_state': 3930, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+2024-04-20 13:37:55,833:INFO:Initializing predict_model()
+2024-04-20 13:37:55,833:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018C3E14BF10>, estimator=CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=False, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018C3E84EAC0>)
+2024-04-20 13:37:55,834:INFO:Checking exceptions
+2024-04-20 13:37:55,834:INFO:Preloading libraries
+2024-04-20 13:37:55,981:INFO:SubProcess plot_model() called ==================================
+2024-04-20 13:37:55,982:INFO:Initializing plot_model()
+2024-04-20 13:37:55,982:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018C3E14BF10>, estimator=CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False), plot=auc, scale=1, save=C:\Users\luant\AppData\Local\Temp\tmppnn6s5j8, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=False, system=False, display=None, display_format=None)
+2024-04-20 13:37:55,982:INFO:Checking exceptions
+2024-04-20 13:37:55,983:INFO:Preloading libraries
+2024-04-20 13:37:55,983:INFO:Copying training dataset
+2024-04-20 13:37:55,983:INFO:Plot type: auc
+2024-04-20 13:37:56,030:INFO:Fitting Model
+2024-04-20 13:37:56,037:WARNING:C:\Users\luant\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+
+2024-04-20 13:37:56,037:INFO:Scoring test/hold-out set
+2024-04-20 13:37:56,056:INFO:Saving 'C:\Users\luant\AppData\Local\Temp\tmppnn6s5j8\AUC.png'
+2024-04-20 13:37:56,253:INFO:Visual Rendered Successfully
+2024-04-20 13:37:56,359:INFO:plot_model() successfully completed......................................
+2024-04-20 13:37:56,366:INFO:Initializing plot_model()
+2024-04-20 13:37:56,366:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018C3E14BF10>, estimator=CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False), plot=confusion_matrix, scale=1, save=C:\Users\luant\AppData\Local\Temp\tmppnn6s5j8, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=False, system=False, display=None, display_format=None)
+2024-04-20 13:37:56,366:INFO:Checking exceptions
+2024-04-20 13:37:56,367:INFO:Preloading libraries
+2024-04-20 13:37:56,368:INFO:Copying training dataset
+2024-04-20 13:37:56,368:INFO:Plot type: confusion_matrix
+2024-04-20 13:37:56,418:INFO:Fitting Model
+2024-04-20 13:37:56,418:WARNING:C:\Users\luant\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+
+2024-04-20 13:37:56,418:INFO:Scoring test/hold-out set
+2024-04-20 13:37:56,433:INFO:Saving 'C:\Users\luant\AppData\Local\Temp\tmppnn6s5j8\Confusion Matrix.png'
+2024-04-20 13:37:56,518:INFO:Visual Rendered Successfully
+2024-04-20 13:37:56,624:INFO:plot_model() successfully completed......................................
+2024-04-20 13:37:56,630:INFO:Initializing plot_model()
+2024-04-20 13:37:56,630:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018C3E14BF10>, estimator=CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False), plot=feature, scale=1, save=C:\Users\luant\AppData\Local\Temp\tmppnn6s5j8, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=False, system=False, display=None, display_format=None)
+2024-04-20 13:37:56,630:INFO:Checking exceptions
+2024-04-20 13:37:56,632:INFO:Preloading libraries
+2024-04-20 13:37:56,632:INFO:Copying training dataset
+2024-04-20 13:37:56,632:INFO:Plot type: feature
+2024-04-20 13:37:56,668:INFO:Saving 'C:\Users\luant\AppData\Local\Temp\tmppnn6s5j8\Feature Importance.png'
+2024-04-20 13:37:56,758:INFO:Visual Rendered Successfully
+2024-04-20 13:37:56,865:INFO:plot_model() successfully completed......................................
+2024-04-20 13:37:56,871:INFO:SubProcess plot_model() end ==================================
+2024-04-20 13:37:56,873:WARNING:c:\ProgramData\anaconda3\envs\EngenhariML\Lib\site-packages\_distutils_hack\__init__.py:33: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+
+2024-04-20 13:37:58,498:INFO:Uploading results into container
+2024-04-20 13:37:58,498:INFO:Uploading model into container now
+2024-04-20 13:37:58,505:INFO:_master_model_container: 1
+2024-04-20 13:37:58,505:INFO:_display_container: 2
+2024-04-20 13:37:58,506:INFO:CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False)
+2024-04-20 13:37:58,506:INFO:create_model() successfully completed......................................
+2024-04-20 13:37:58,609:INFO:Initializing plot_model()
+2024-04-20 13:37:58,610:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018C3E14BF10>, estimator=CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False), plot=auc, scale=1, save=True, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-04-20 13:37:58,610:INFO:Checking exceptions
+2024-04-20 13:37:58,612:INFO:Preloading libraries
+2024-04-20 13:37:58,613:INFO:Copying training dataset
+2024-04-20 13:37:58,613:INFO:Plot type: auc
+2024-04-20 13:37:58,665:INFO:Fitting Model
+2024-04-20 13:37:58,665:WARNING:C:\Users\luant\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+
+2024-04-20 13:37:58,665:INFO:Scoring test/hold-out set
+2024-04-20 13:37:58,680:INFO:Saving 'AUC.png'
+2024-04-20 13:37:58,840:INFO:Visual Rendered Successfully
+2024-04-20 13:37:58,940:INFO:plot_model() successfully completed......................................
+2024-04-20 13:37:58,943:INFO:Initializing plot_model()
+2024-04-20 13:37:58,943:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018C3E14BF10>, estimator=CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False), plot=pr, scale=1, save=True, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-04-20 13:37:58,943:INFO:Checking exceptions
+2024-04-20 13:37:58,946:INFO:Preloading libraries
+2024-04-20 13:37:58,946:INFO:Copying training dataset
+2024-04-20 13:37:58,946:INFO:Plot type: pr
+2024-04-20 13:37:58,990:INFO:Fitting Model
+2024-04-20 13:37:58,990:WARNING:C:\Users\luant\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+
+2024-04-20 13:37:58,990:INFO:Scoring test/hold-out set
+2024-04-20 13:37:59,004:INFO:Saving 'Precision Recall.png'
+2024-04-20 13:37:59,137:INFO:Visual Rendered Successfully
+2024-04-20 13:37:59,241:INFO:plot_model() successfully completed......................................
+2024-04-20 13:37:59,243:INFO:Initializing plot_model()
+2024-04-20 13:37:59,243:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018C3E14BF10>, estimator=CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False), plot=confusion_matrix, scale=1, save=True, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-04-20 13:37:59,243:INFO:Checking exceptions
+2024-04-20 13:37:59,246:INFO:Preloading libraries
+2024-04-20 13:37:59,247:INFO:Copying training dataset
+2024-04-20 13:37:59,247:INFO:Plot type: confusion_matrix
+2024-04-20 13:37:59,295:INFO:Fitting Model
+2024-04-20 13:37:59,295:WARNING:C:\Users\luant\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+
+2024-04-20 13:37:59,295:INFO:Scoring test/hold-out set
+2024-04-20 13:37:59,311:INFO:Saving 'Confusion Matrix.png'
+2024-04-20 13:37:59,389:INFO:Visual Rendered Successfully
+2024-04-20 13:37:59,492:INFO:plot_model() successfully completed......................................
+2024-04-20 13:37:59,494:INFO:Initializing plot_model()
+2024-04-20 13:37:59,494:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018C3E14BF10>, estimator=CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False), plot=threshold, scale=1, save=True, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-04-20 13:37:59,494:INFO:Checking exceptions
+2024-04-20 13:37:59,497:INFO:Preloading libraries
+2024-04-20 13:37:59,497:INFO:Copying training dataset
+2024-04-20 13:37:59,497:INFO:Plot type: threshold
+2024-04-20 13:37:59,541:INFO:Fitting Model
+2024-04-20 13:38:00,864:WARNING:C:\Users\luant\AppData\Roaming\Python\Python311\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but LogisticRegression was fitted with feature names
+  warnings.warn(
+
+2024-04-20 13:38:00,878:INFO:Scoring test/hold-out set
+2024-04-20 13:38:00,880:INFO:Saving 'Threshold.png'
+2024-04-20 13:38:01,147:INFO:Visual Rendered Successfully
+2024-04-20 13:38:01,249:INFO:plot_model() successfully completed......................................
+2024-04-20 13:38:01,251:INFO:Initializing plot_model()
+2024-04-20 13:38:01,251:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018C3E14BF10>, estimator=CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False), plot=learning, scale=1, save=True, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-04-20 13:38:01,251:INFO:Checking exceptions
+2024-04-20 13:38:01,254:INFO:Preloading libraries
+2024-04-20 13:38:01,254:INFO:Copying training dataset
+2024-04-20 13:38:01,254:INFO:Plot type: learning
+2024-04-20 13:38:01,307:INFO:Fitting Model
+2024-04-20 13:38:03,129:INFO:Saving 'Learning Curve.png'
+2024-04-20 13:38:03,283:INFO:Visual Rendered Successfully
+2024-04-20 13:38:03,384:INFO:plot_model() successfully completed......................................
+2024-04-20 13:38:03,389:INFO:Initializing save_model()
+2024-04-20 13:38:03,389:INFO:save_model(model=CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False), model_name=./modelo_kobe_lr, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\luant\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['lat', 'lon', 'minutes_remaining',
+                                             'period', 'playoffs',
+                                             'shot_distance'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent')))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2024-04-20 13:38:03,389:INFO:Adding model into prep_pipe
+2024-04-20 13:38:03,391:INFO:./modelo_kobe_lr.pkl saved in current working directory
+2024-04-20 13:38:03,396:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['lat', 'lon', 'minutes_remaining',
+                                             'period', 'playoffs',
+                                             'shot_distance'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrap...
+                                                                                    multi_class='auto',
+                                                                                    n_jobs=None,
+                                                                                    penalty='l2',
+                                                                                    random_state=3930,
+                                                                                    solver='lbfgs',
+                                                                                    tol=0.0001,
+                                                                                    verbose=0,
+                                                                                    warm_start=False),
+                                                      dual=False,
+                                                      fit_intercept=True,
+                                                      intercept_scaling=1,
+                                                      l1_ratio=None,
+                                                      max_iter=1000,
+                                                      multi_class='auto',
+                                                      n_jobs=None, penalty='l2',
+                                                      probability_threshold=0.5,
+                                                      random_state=3930,
+                                                      solver='lbfgs',
+                                                      tol=0.0001, verbose=0,
+                                                      warm_start=False))],
+         verbose=False)
+2024-04-20 13:38:03,396:INFO:save_model() successfully completed......................................
+2024-04-20 13:38:03,505:INFO:Initializing load_model()
+2024-04-20 13:38:03,505:INFO:load_model(model_name=./modelo_kobe_lr, platform=None, authentication=None, verbose=True)
+2024-04-20 13:38:14,363:INFO:Initializing predict_model()
+2024-04-20 13:38:14,363:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018C3E14BF10>, estimator=CustomProbabilityThresholdClassifier(C=1.0, class_weight=None,
+                                     classifier=LogisticRegression(C=1.0,
+                                                                   class_weight=None,
+                                                                   dual=False,
+                                                                   fit_intercept=True,
+                                                                   intercept_scaling=1,
+                                                                   l1_ratio=None,
+                                                                   max_iter=1000,
+                                                                   multi_class='auto',
+                                                                   n_jobs=None,
+                                                                   penalty='l2',
+                                                                   random_state=3930,
+                                                                   solver='lbfgs',
+                                                                   tol=0.0001,
+                                                                   verbose=0,
+                                                                   warm_start=False),
+                                     dual=False, fit_intercept=True,
+                                     intercept_scaling=1, l1_ratio=None,
+                                     max_iter=1000, multi_class='auto',
+                                     n_jobs=None, penalty='l2',
+                                     probability_threshold=0.5,
+                                     random_state=3930, solver='lbfgs',
+                                     tol=0.0001, verbose=0, warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=True, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018C3E84C0E0>)
+2024-04-20 13:38:14,363:INFO:Checking exceptions
+2024-04-20 13:38:14,363:INFO:Preloading libraries
+2024-04-20 13:38:14,560:WARNING:C:\Users\luant\AppData\Roaming\Python\Python311\site-packages\mlflow\types\utils.py:393: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+
+2024-04-20 13:38:17,904:WARNING:C:\Users\luant\AppData\Local\Temp\ipykernel_18140\3797219351.py:25: FutureWarning: ``mlflow.tracking.client.MlflowClient.get_latest_versions`` is deprecated since 2.9.0. Model registry stages will be removed in a future major release. To learn more about the deprecation of model registry stages, see our migration guide here: https://mlflow.org/docs/2.11.3/model-registry.html#migrating-from-stages
+  model_version = client.get_latest_versions(registered_model_name)[-1].version
+
